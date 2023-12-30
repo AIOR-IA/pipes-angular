@@ -1,0 +1,35 @@
+<p-panel [showHeader]="false" class="p-2">
+  <h1>UnCommon Pipes</h1>
+  <p>
+    Pipes included in Angular - usually in the Common Module
+  </p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="Slice Pipe" subheader="This Year">
+      {{ title  }}
+      <br>
+      <b>slice</b>
+      <pre> {{ title | slice:0:-10  }} ... </pre>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="async Pipe" subheader="This Year">
+      <pre>Observable timer - interval rxjs</pre>
+      <p> {{ myObservableTimer | async}} </p>
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Key Value Pipe" subheader="Object not iterable">
+      <ul>
+        <li *ngFor="let item of person | keyvalue ">
+          {{ item | json}}
+        </li>
+      </ul>
+    </p-card>
+  </div>
+</div>
+
