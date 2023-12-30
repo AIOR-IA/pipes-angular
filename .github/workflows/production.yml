@@ -1,0 +1,19 @@
+name: Vercel Production Deployment
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v2
+      - name: Install Packages
+        run: npm ci
+      - name: Bundle
+        uses: npm run build
+
