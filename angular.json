@@ -27,9 +27,18 @@
             "styles": [
               "src/styles.css",
               "node_modules/primeicons/primeicons.css",
-              "node_modules/primeng/resources/themes/lara-dark-indigo/theme.css",
               "node_modules/primeng/resources/primeng.min.css",
-              "node_modules/primeflex/primeflex.min.css"
+              "node_modules/primeflex/primeflex.min.css",
+              {
+                "input": "src/theme-md-dark-indigo.css",
+                "bundleName": "md-dark-indigo",
+                "inject": false
+              },
+              {
+                "input": "src/theme-md-light-indigo.css",
+                "bundleName": "nova-alt",
+                "inject": false
+              }
             ],
             "scripts": []
           },

@@ -1,5 +1,5 @@
 <p-panel [showHeader]="false" class="p-2">
-  <h1>Numeric Pipes</h1>
+  <h1 class="text-primary-500">Numeric Pipes</h1>
   <p>
     Pipes included in Angular - usually in the Common Module
   </p>
@@ -7,8 +7,9 @@
 
 <div class="grid">
   <div class="col-12 md:col-4">
-    <p-card header="Net Sales" subheader="This Year">
-      {{ ( totalSells + 1232 ) | number:'1.2-2' }}
+    <p-card header="Net Sales" subheader="This Year" styleClass="p-card-shadow">
+
+      <p> {{ ( totalSells + 1232 ) | number:'1.2-2' }}</p>
     </p-card>
   </div>
 

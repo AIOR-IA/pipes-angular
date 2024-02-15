@@ -1,0 +1,13 @@
+.pi {
+    font-size: 1.4em;
+    margin-right: 0.5em;
+
+    
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
