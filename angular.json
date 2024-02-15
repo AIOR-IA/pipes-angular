@@ -35,7 +35,7 @@
                 "inject": false
               },
               {
-                "input": "src/theme-md-light-indigo.css",
+                "input": "src/theme-nova-alt.css",
                 "bundleName": "nova-alt",
                 "inject": false
               }
@@ -104,6 +104,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

@@ -16,6 +16,8 @@ export class MenuComponent implements OnInit{
     let theme = window.localStorage.getItem("theme");
     if(theme) {
       this.themeSelection = (theme === 'dark') ? true : false;      
+    } else {
+        window.localStorage.setItem("theme", "dark");
     }
   }
 
@@ -60,7 +62,7 @@ export class MenuComponent implements OnInit{
     let theme = state ? 'dark' : 'light';
     window.localStorage.setItem("theme", theme);
     let themeLink = this.document.getElementById('app-theme') as HTMLLinkElement;
-    themeLink.href = `md-${theme}-indigo.css`
+    themeLink.href = (theme === 'dark') ? `md-${theme}-indigo.css` : 'nova-alt.css'
 
 
   }
